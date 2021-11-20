@@ -18,11 +18,11 @@ def get_prime_factors(n):
         n = math.floor(n / 2)
  
     for i in range(3, int(math.sqrt(n)), 2):
-        while (n % i == 0) :
+        while (n % i == 0):
             prime_factors.add(i)
             n = math.floor(n / i)
     
-    if (n > 2) :
+    if (n > 2):
         prime_factors.add(n)
 
     return prime_factors
